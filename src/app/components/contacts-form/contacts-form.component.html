@@ -1,0 +1,33 @@
+<div class="container col-sm-8 m-t-30">
+    <form>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="inputFname">First Name</label>
+                <input type="text" class="form-control" name="firstName" id="inputFname" placeholder="First Name" [(ngModel)]="contact.firstName" required>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="inputLname">Last Name</label>
+                <input type="text" class="form-control" name="lastName" id="inputLname" placeholder="Last Name" [(ngModel)]="contact.lastName" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="inputEmail">Email</label>
+            <input type="email" class="form-control" name="email" id="inputEmail" placeholder="Email" [(ngModel)]="contact.email" required>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="inputPhone">Phone</label>
+                <input type="text" class="form-control" name="phone" placeholder="Phone" id="inputPhone" [(ngModel)]="contact.phone" required>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="inputStatus">Status</label>
+                <select id="inputStatus" class="form-control" name="status" [(ngModel)]="contact.status" required>
+                  <option value="">Choose...</option>
+                  <option value="active">Active</option>
+                  <option value="inactive">Inactive</option>
+                </select>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary" (click)="onSubmit()">Submit</button>
+    </form>
+</div>

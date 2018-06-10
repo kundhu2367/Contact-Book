@@ -1,0 +1,34 @@
+<div class="container m-t-15">
+    <div class="row m-b-15">
+        <div class="col-xs-6 col-sm-6 h4"> <strong>Contacts List</strong></div>
+        <div class="col-xs-6 col-sm-6"><a class="btn btn-warning pull-right" routerLink="/add">Add Contact</a></div>
+    </div>
+    <table class="table table-striped table-hover ">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Email</th>
+                <th>Phone Num</th>
+                <th>Status</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let contact of contacts">
+                <td>{{contact.id}}</td>
+                <td>{{contact.firstName}}</td>
+                <td>{{contact.lastName}}</td>
+                <td>{{contact.email}}</td>
+                <td>{{contact.phone}}</td>
+                <td>{{contact.status}}</td>
+                <td>
+                    <span><i class="fa fa-pencil p-l-5 p-r-5" routerLink="/edit/{{contact.id}}" aria-hidden="true"></i><span class="p-l-5"></span><i class="fa fa-trash-o p-l-5 p-r-5" (click)="onDelete(contact)" aria-hidden="true"></i></span>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <span *ngIf="contacts == null || contacts.length == 0">
+        <h6 class="text-center">Please add contacts to display here...</h6>
+    </span>

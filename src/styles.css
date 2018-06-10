@@ -1,0 +1,73 @@
+/* You can add global styles to this file, and also import other style files */
+
+a {
+    cursor: pointer;
+}
+
+.pull-right {
+    float: right;
+}
+
+.m-t-5 {
+    margin-top: 5px;
+}
+
+.m-t-15 {
+    margin-top: 15px;
+}
+
+.m-t-30 {
+    margin-top: 30px;
+}
+
+.m-t-50 {
+    margin-top: 50px;
+}
+
+.m-b-5 {
+    margin-bottom: 5px;
+}
+
+.m-b-15 {
+    margin-bottom: 15px;
+}
+
+.m-b-30 {
+    margin-bottom: 30px;
+}
+
+.m-b-50 {
+    margin-bottom: 50px;
+}
+
+.p-r-5 {
+    padding-right: 5px;
+}
+
+.p-r-15 {
+    padding-right: 15px;
+}
+
+.p-r-30 {
+    padding-right: 30px;
+}
+
+.p-r-50 {
+    padding-right: 50px;
+}
+
+.p-l-5 {
+    padding-left: 5px;
+}
+
+.p-l-15 {
+    padding-left: 15px;
+}
+
+.p-l-30 {
+    padding-left: 30px;
+}
+
+.p-l-50 {
+    padding-left: 50px;
+}
